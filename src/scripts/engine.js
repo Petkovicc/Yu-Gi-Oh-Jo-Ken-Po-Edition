@@ -24,7 +24,7 @@ const state = {
     },
   };
   
-  const pathImages = "src/assets/icons/";
+  const pathImages = "/src/assets/icons/";
   
   const cardData = [
     {
@@ -61,7 +61,7 @@ const state = {
   async function createCardImage(IdCard, fieldSide) {
     const cardImage = document.createElement("img");
     cardImage.setAttribute("height", "100px");
-    cardImage.setAttribute("src", "src/assets/icons/card-back.png");
+    cardImage.setAttribute("src", "/src/assets/icons/card-back.png");
     cardImage.setAttribute("data-id", IdCard);
     cardImage.classList.add("card");
   
@@ -177,7 +177,7 @@ const state = {
   }
   
   async function playAudio(status) {
-    const audio = new Audio(`src/assets/audios/${status}.wav`);
+    const audio = new Audio(`/src/assets/audios/${status}.wav`);
     try {
       audio.play();
     } catch {}
